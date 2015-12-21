@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{84FEFDB0-653F-45B5-89C0-9DA7F40D312A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>InstantRadiosity</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">InstantRadiosity.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">InstantRadiosity</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InstantRadiosity.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InstantRadiosity</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InstantRadiosity.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InstantRadiosity</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InstantRadiosity.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InstantRadiosity</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cpm-bin\github_iauns_cpmglew_101\bin\Debug\github_iauns_cpmglew_101.lib;cpm-bin\github_iauns_cpmglplatform_137\bin\Debug\github_iauns_cpmglplatform_137.lib;cpm-bin\github_iauns_cpmglfw_102\bin\Debug\glfw3.lib;opengl32.lib;..\contrib\windows\lib\embree.lib;cpm-bin\github_iauns_cpmglew_101\bin\Debug\github_iauns_cpmglew_101.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Class/CS482_ICG/TeamProject/build/Debug/InstantRadiosity.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Class/CS482_ICG/TeamProject/build/Debug/InstantRadiosity.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cpm-bin\github_iauns_cpmglew_101\bin\Release\github_iauns_cpmglew_101.lib;cpm-bin\github_iauns_cpmglplatform_137\bin\Release\github_iauns_cpmglplatform_137.lib;cpm-bin\github_iauns_cpmglfw_102\bin\Release\glfw3.lib;opengl32.lib;..\contrib\windows\lib\embree.lib;cpm-bin\github_iauns_cpmglew_101\bin\Release\github_iauns_cpmglew_101.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Class/CS482_ICG/TeamProject/build/Release/InstantRadiosity.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Class/CS482_ICG/TeamProject/build/Release/InstantRadiosity.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cpm-bin\github_iauns_cpmglew_101\bin\MinSizeRel\github_iauns_cpmglew_101.lib;cpm-bin\github_iauns_cpmglplatform_137\bin\MinSizeRel\github_iauns_cpmglplatform_137.lib;cpm-bin\github_iauns_cpmglfw_102\bin\MinSizeRel\glfw3.lib;opengl32.lib;..\contrib\windows\lib\embree.lib;cpm-bin\github_iauns_cpmglew_101\bin\MinSizeRel\github_iauns_cpmglew_101.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Class/CS482_ICG/TeamProject/build/MinSizeRel/InstantRadiosity.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Class/CS482_ICG/TeamProject/build/MinSizeRel/InstantRadiosity.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPM_GL_PLATFORM_NS=github_iauns_cpmglplatform_137;GLEW_STATIC;CPM_IAUNS_CPM_GLEW_NS=github_iauns_cpmglew_101;CPM_GLEW_NS=github_iauns_cpmglew_101;GLM_SWIZZLE;GLM_FORCE_CXX03;CPM_IAUNS_CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLM_NS=github_iauns_cpmglm_102;CPM_GLFW_NS=github_iauns_cpmglfw_102;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cpm-bin\github_iauns_cpmglew_101\bin\RelWithDebInfo\github_iauns_cpmglew_101.lib;cpm-bin\github_iauns_cpmglplatform_137\bin\RelWithDebInfo\github_iauns_cpmglplatform_137.lib;cpm-bin\github_iauns_cpmglfw_102\bin\RelWithDebInfo\glfw3.lib;opengl32.lib;..\contrib\windows\lib\embree.lib;cpm-bin\github_iauns_cpmglew_101\bin\RelWithDebInfo\github_iauns_cpmglew_101.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Class/CS482_ICG/TeamProject/build/RelWithDebInfo/InstantRadiosity.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Class/CS482_ICG/TeamProject/build/RelWithDebInfo/InstantRadiosity.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/cornell/cornell_box.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/cornell/cornell_box.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/cornell/cornell_box.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/cornell/cornell_box.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/cornell/cornell_box.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/cornell/cornell_box.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/cornell/cornell_box.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/cornell/cornell_box.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cornell_box.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cornell_box.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cornell_box.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/cornell/cube.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/cornell/cube.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/cornell/cube.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/cornell/cube.mtl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.mtl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.mtl;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.mtl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/cornell/cube.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/cornell/cube.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/cornell/cube.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/cornell/cube.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj D:/Class/CS482_ICG/TeamProject/build/res/cornell/cube.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/cornell/cube.obj;D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\cornell\cube.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/quad.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/quad.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/quad.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/quad.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/quad.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/quad.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/quad.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/quad.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/quad.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/quad.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\quad.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/screen_draw.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/screen_draw.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/screen_draw.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/screen_draw.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/screen_draw.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/screen_draw.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/screen_draw.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/screen_draw.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/screen_draw.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/screen_draw.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\screen_draw.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/shadow.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/shadow.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/shadow.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/shadow.fragment.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.fragment.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.fragment.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.fragment.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating res/shaders/shadow.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating res/shaders/shadow.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating res/shaders/shadow.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating res/shaders/shadow.vertex.glsl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl D:/Class/CS482_ICG/TeamProject/build/res/shaders/shadow.vertex.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/res/shaders/shadow.vertex.glsl;D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\res\shaders\shadow.vertex.glsl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Class/CS482_ICG/TeamProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Class/CS482_ICG/TeamProject -BD:/Class/CS482_ICG/TeamProject/build --check-stamp-file D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Class/CS482_ICG/TeamProject/CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCCompiler.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\CPM.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMCommonSCM.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMGit.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMHG.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMSVN.cmake;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Class/CS482_ICG/TeamProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Class/CS482_ICG/TeamProject -BD:/Class/CS482_ICG/TeamProject/build --check-stamp-file D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Class/CS482_ICG/TeamProject/CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCCompiler.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\CPM.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMCommonSCM.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMGit.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMHG.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMSVN.cmake;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Class/CS482_ICG/TeamProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Class/CS482_ICG/TeamProject -BD:/Class/CS482_ICG/TeamProject/build --check-stamp-file D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Class/CS482_ICG/TeamProject/CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCCompiler.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\CPM.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMCommonSCM.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMGit.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMHG.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMSVN.cmake;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Class/CS482_ICG/TeamProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Class/CS482_ICG/TeamProject -BD:/Class/CS482_ICG/TeamProject/build --check-stamp-file D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Class/CS482_ICG/TeamProject/CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCCompiler.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\CPM.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMCommonSCM.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMGit.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMHG.cmake;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\util\CPMSVN.cmake;D:\Class\CS482_ICG\TeamProject\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Class\CS482_ICG\TeamProject\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\lightcuts.h" />
+    <ClInclude Include="..\src\types.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\camera.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\device_mesh.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\gl_snippets.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\host_mesh.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\main.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\random.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\raytracer.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\system_context.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\tiny_obj_loader\tiny_obj_loader.h" />
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\utility.h" />
+    <ClCompile Include="..\src\lightcuts.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\camera.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\device_mesh.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\host_mesh.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\main.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\raytracer.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\system_context.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\utility.cpp" />
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\tiny_obj_loader\tiny_obj_loader.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Class/CS482_ICG/TeamProject/build/ZERO_CHECK.vcxproj">
+      <Project>02BF358D-FDDF-47F6-88D7-27937D982A51</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Class/CS482_ICG/TeamProject/build/cpm-bin/github_iauns_cpmglew_101/bin/github_iauns_cpmglew_101.vcxproj">
+      <Project>9D761925-2D80-41C2-813E-BD6FED10B926</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Class/CS482_ICG/TeamProject/build/cpm-bin/github_iauns_cpmglplatform_137/bin/github_iauns_cpmglplatform_137.vcxproj">
+      <Project>5AAE8BBC-71E6-48F9-8F16-F995063235D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Class/CS482_ICG/TeamProject/build/cpm-bin/github_iauns_cpmglfw_102/bin/3rdParty/glfw/src/glfw.vcxproj">
+      <Project>48A09CE5-AFD6-4D27-9503-E9E2208AA33A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\shaders\gbuffer.fragment.glsl" />
+    <None Include="..\res\shaders\gbuffer.vertex.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

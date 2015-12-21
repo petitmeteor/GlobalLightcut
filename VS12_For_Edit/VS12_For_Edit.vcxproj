@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E54EB6A-8764-40DB-945F-A85E802C4CB3}</ProjectGuid>
+    <RootNamespace>VS12_For_Edit</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src\glew\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglew_101\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglplatform_137\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty\glm;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglm_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty\glfw\include;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src;D:\Class\CS482_ICG\TeamProject\build\cpm-packages\modules\github_iauns_cpmglfw_102\src\3rdParty;D:\Class\CS482_ICG\TeamProject\contrib\windows\include;D:\Class\CS482_ICG\TeamProject\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\res\shaders\gbuffer.fragment.glsl" />
+    <None Include="..\res\shaders\gbuffer.vertex.glsl" />
+    <None Include="..\res\shaders\quad.fragment.glsl" />
+    <None Include="..\res\shaders\quad.vertex.glsl" />
+    <None Include="..\res\shaders\screen_draw.fragment.glsl" />
+    <None Include="..\res\shaders\screen_draw.vertex.glsl" />
+    <None Include="..\res\shaders\shadow.fragment.glsl" />
+    <None Include="..\res\shaders\shadow.vertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\camera.cpp" />
+    <ClCompile Include="..\src\device_mesh.cpp" />
+    <ClCompile Include="..\src\host_mesh.cpp" />
+    <ClCompile Include="..\src\lightcuts.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\raytracer.cpp" />
+    <ClCompile Include="..\src\system_context.cpp" />
+    <ClCompile Include="..\src\tiny_obj_loader\tiny_obj_loader.cc" />
+    <ClCompile Include="..\src\utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\camera.h" />
+    <ClInclude Include="..\src\device_mesh.h" />
+    <ClInclude Include="..\src\gl_snippets.h" />
+    <ClInclude Include="..\src\host_mesh.h" />
+    <ClInclude Include="..\src\lightcuts.h" />
+    <ClInclude Include="..\src\main.h" />
+    <ClInclude Include="..\src\random.h" />
+    <ClInclude Include="..\src\raytracer.h" />
+    <ClInclude Include="..\src\system_context.h" />
+    <ClInclude Include="..\src\tiny_obj_loader\tiny_obj_loader.h" />
+    <ClInclude Include="..\src\types.h" />
+    <ClInclude Include="..\src\utility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

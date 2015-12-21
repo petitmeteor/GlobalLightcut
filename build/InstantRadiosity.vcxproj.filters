@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\device_mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\host_mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\raytracer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\system_context.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\utility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Class\CS482_ICG\TeamProject\src\tiny_obj_loader\tiny_obj_loader.cc">
+      <Filter>src\tiny_obj_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lightcuts.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\device_mesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\gl_snippets.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\host_mesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\random.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\raytracer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\system_context.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\tiny_obj_loader\tiny_obj_loader.h">
+      <Filter>src\tiny_obj_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Class\CS482_ICG\TeamProject\src\utility.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lightcuts.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.mtl">
+      <Filter>res\cornell</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cornell_box.obj">
+      <Filter>res\cornell</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cube.mtl">
+      <Filter>res\cornell</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\cornell\cube.obj">
+      <Filter>res\cornell</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\quad.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\quad.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\screen_draw.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\res\shaders\shadow.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Class\CS482_ICG\TeamProject\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="res\cornell">
+      <UniqueIdentifier>{6ADB304F-78E8-4CAB-8FDF-489E416612A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\shaders">
+      <UniqueIdentifier>{A91AAAA3-D7C8-4ACB-A984-5700E5ECB689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{EF2C3E4F-F3C3-482D-9626-25085E65CD2F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{D573E6EF-394F-461C-AB21-A5E8FD70BAC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tiny_obj_loader">
+      <UniqueIdentifier>{9C8E633B-3F15-4D8B-8E31-D73B564C8A99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\shaders\gbuffer.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\gbuffer.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{f8bcb42c-2c57-4ec9-9aad-f0967f7a2695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\shaders">
+      <UniqueIdentifier>{401bd203-b1e2-4fd9-880b-7ee22ceb30db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a3238103-33b8-45c2-b21a-0231577d5a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tiny_obj_loader">
+      <UniqueIdentifier>{bf73c8c3-727d-4d82-830b-60e8a859e22d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\shaders\quad.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\quad.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\screen_draw.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\screen_draw.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\shadow.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\shadow.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\gbuffer.fragment.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="..\res\shaders\gbuffer.vertex.glsl">
+      <Filter>res\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\tiny_obj_loader\tiny_obj_loader.cc">
+      <Filter>src\tiny_obj_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\device_mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\host_mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lightcuts.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\system_context.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\tiny_obj_loader\tiny_obj_loader.h">
+      <Filter>src\tiny_obj_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\device_mesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl_snippets.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\host_mesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lightcuts.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\random.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\system_context.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utility.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
